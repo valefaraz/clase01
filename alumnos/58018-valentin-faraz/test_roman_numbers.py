@@ -67,6 +67,26 @@ class TestRomanNumbers(unittest.TestCase):
         decimal_number = roman_to_decimal('XLIII')
         self.assertEqual(decimal_number, 43)
 
+    def test_roman_LVIII_to_decimal(self):
+        decimal_number = roman_to_decimal('LVIII')
+        self.assertEqual(decimal_number, 58)
+
+    def test_roman_LXII_to_decimal(self):
+        decimal_number = roman_to_decimal('LXXII')
+        self.assertEqual(decimal_number, 72)
+
+    def test_roman_LXXXVII_to_decimal(self):
+        decimal_number = roman_to_decimal('LXXXVII')
+        self.assertEqual(decimal_number, 87)
+
+    def test_roman_XCI_to_decimal(self):
+        decimal_number = roman_to_decimal('XCI')
+        self.assertEqual(decimal_number, 91)
+
+    def test_roman_XCIX_to_decimal(self):
+        decimal_number = roman_to_decimal('XCIX')
+        self.assertEqual(decimal_number, 99)
+
     def test_roman_L_to_decimal(self):
         decimal_number = roman_to_decimal('L')
         self.assertEqual(decimal_number, 50)
@@ -74,6 +94,39 @@ class TestRomanNumbers(unittest.TestCase):
     def test_roman_C_to_decimal(self):
         decimal_number = roman_to_decimal('C')
         self.assertEqual(decimal_number, 100)
+    
+    def test_roman_CI_to_decimal(self):
+        decimal_number = roman_to_decimal('CI')
+        self.assertEqual(decimal_number, 101)
 
+    def test_roman_CXLIX_to_decimal(self):
+        decimal_number = roman_to_decimal('CXLIX')
+        self.assertEqual(decimal_number, 149)
+
+    def test_roman_CDLXXVIII_to_decimal(self):
+        decimal_number = roman_to_decimal('CDLXXVIII')
+        self.assertEqual(decimal_number, 478)
+
+    def test_roman_DCXCIII_to_decimal(self):
+        decimal_number = roman_to_decimal('DCXCIII')
+        self.assertEqual(decimal_number, 693)
+
+    def test_roman_CMLIV_to_decimal(self):
+        decimal_number = roman_to_decimal('CMLIV')
+        self.assertEqual(decimal_number, 954)
+
+    def test_roman_M_to_decimal(self):
+        decimal_number = roman_to_decimal('M')
+        self.assertEqual(decimal_number, 1000)
+
+    def test_roman_CDXLIV_to_decimal(self):
+        decimal_number = roman_to_decimal('CDXLIV')
+        self.assertEqual(decimal_number, 444)
+
+    def test_roman_CMXCIX_to_decimal(self):
+        decimal_number = roman_to_decimal('CMXCIX')
+        self.assertEqual(decimal_number, 999)
+
+    
 if __name__== '__main__':
     unittest.main() 
