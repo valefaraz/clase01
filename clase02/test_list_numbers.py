@@ -1,5 +1,5 @@
 import unittest
-from list_numbers import find_max
+from list_numbers_2 import find_max
 
 
 class TestNumbersFinder(unittest.TestCase):
@@ -23,6 +23,40 @@ class TestNumbersFinder(unittest.TestCase):
         max_number = find_max([])
         self.assertIsNone(max_number)
 
+    def test_find_max_list_is_not_a_list_UGLY(self):
+        try:
+            find_max(1234)
+            self.fail()
+        except Exception:
+            pass
+
+    def test_find_max_list_is_not_a_list_UGLY_2(self):
+       try:
+           find_max([1234, 'hola'])
+           self.fail()
+       except Exception:
+           pass
+    def test_find_max_list_is_not_a_list_UGLY_2(self):
+        from list_numbers_2 import NotAListException
+        from list_numbers_2 import NotAllNumberInListException
+        try:
+            find_max(1234)
+            self.fail()
+        except NotAListException:
+            pass
+        except NotAllNumberInListException:
+            self.fail()
+
+    def test_find_max_list_not_all_number_in_list_UGLY(self):
+        from list_numbers_2 import NotAListException
+        from list_numbers_2 import NotAllNumberInListException
+        try:
+            find_max([1, 2, 3, 4, 'HOLA'])
+            self.fail()
+        except NotAListException:
+            self.fail()
+        except NotAllNumberInListException:
+            pass    
 
 if __name__ == '__main__':
     unittest.main()
