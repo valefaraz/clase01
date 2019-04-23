@@ -21,7 +21,6 @@ class TestInterfazFactorial(unittest.TestCase):
 
         self.assertEqual(result,'Error')
 
-    
-       
+
 if __name__ == '__main__':
    unittest.main()
