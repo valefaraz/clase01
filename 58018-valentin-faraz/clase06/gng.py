@@ -26,7 +26,6 @@ class ComputerAgainstHumanGame(Game):
         self.cota_max = 100
         self.cota_min = 0
     def input_text(self):
-
     
     def play(self,respuesta):
         self.cota_max
