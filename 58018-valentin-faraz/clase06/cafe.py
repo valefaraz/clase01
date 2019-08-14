@@ -143,6 +143,3 @@ class cafeteraPremium(pagoCafetera):
             self.cafe = 100
             self.azucar = 100
             return 'No puedo hacer el cafe'
-
-        
-
