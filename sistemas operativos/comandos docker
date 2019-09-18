@@ -1,0 +1,13 @@
+DOCKER
+sudo docker image ls --> muestra las imagenes
+sudo docker pull python:3 --> baja la imagen python
+sudo docker ps -a -->muestra las instancias
+sudo docker rm (name instancia)-->borra la instancia
+sudo docker stop (name instancia) -->para la instancia
+sudo docker image rm (image id) -->borra la imagen
+docker build -t (name-instancia) .
+sudo docker run (name-instancias)	
+
+SCRIPTS
+/.nombre-del-scrip -->ejecutarlo
+
